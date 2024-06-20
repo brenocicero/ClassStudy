@@ -1,19 +1,23 @@
 class characters {
-    constructor(name, age, category){
-        this.name = name
-        this.age = age
-        this.category = category
+    constructor(name, age, category) {
+        this.name = name;
+        this.age = age;
+        this.category = category;
     }
 
-    atacar(){
-        if characters.category === mago{
-            console.log("usou magia")
+    atacar() {
+        if (this.category === "mago") {
+            console.log(`O ${this.category} atacou usando magia`);
+        } else if (this.category === "guerreiro") {
+            console.log(`O ${this.category} atacou usando espada`);
+        } else if (this.category === "monge") {
+            console.log(`O ${this.category} atacou usando artes marciais`);
+        } else if (this.category === "ninja") {
+            console.log(`O ${this.category} atacou usando shuriken`);
         }
-        if characters.category === guerreiro{
-
-        }
-
     }
 }
 
-let batman = new characters("Batman", "45", "guerreiro")
+let hero = new characters("Naruto", 45, "ninja");
+
+hero.atacar()
